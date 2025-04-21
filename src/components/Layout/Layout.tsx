@@ -1,6 +1,6 @@
 import Tab from "../Tab/Tab.tsx";
 import styled from "styled-components";
-import { tabs } from "../../data/constants.tsx";
+import { tabs } from "../../data/constants.ts";
 import { useEffect, useState, useRef } from "react";
 import { Outlet } from "react-router-dom";
 import { Tooltip } from "../Tooltip/Tooltip.tsx";
