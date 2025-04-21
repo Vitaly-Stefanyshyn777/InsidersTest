@@ -1,5 +1,4 @@
 import React from "react";
-// import { ArrowIcon } from "./Icon/CheckIcon";
 import { tabs } from "../data/constants.tsx";
 import { OverflowDropdownProps } from "../data/types";
 import clsx from "clsx";
@@ -59,9 +58,7 @@ export const OverflowDropdown: React.FC<OverflowDropdownProps> = ({
                     e.stopPropagation();
                     togglePin(tab.name);
                   }}
-                >
-                  {/* Replace with CancelIcon component if available */}
-                </button>
+                ></button>
               </div>
             );
           })}

@@ -23,13 +23,10 @@ export const Tooltip = ({
       const rect = tooltipRef.current.getBoundingClientRect();
 
       if (rect.right > window.innerWidth) {
-        // Tooltip goes beyond the right edge
         setPositionClass("right-[70%]");
       } else if (rect.left < 0) {
-        // Tooltip goes beyond the left edge
         setPositionClass("-right-[70%]");
       } else {
-        // Default or center it if you prefer
         setPositionClass("-right-[70%]");
       }
     }

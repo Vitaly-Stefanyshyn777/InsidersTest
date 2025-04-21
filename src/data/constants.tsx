@@ -14,36 +14,6 @@ import {
   TelefonieIcon,
   UserIcon,
 } from "../components/Icon/CheckIcon";
-// import { BankingIcon } from "../components/Icon/CheckIcon";
-// import {
-//   BankingIcon,
-//   BookIcon,
-//   BrowserIcon,
-//   CartIcon,
-//   CubeIcon,
-//   DashboardIcon,
-//   PostIcon,
-//   SettingsIcon,
-//   ShopIcon,
-//   StatistikIcon,
-//   TelefonieIcon,
-//   UserIcon,
-// } from "../components/Icon/CheckIcon";
-// import {
-//   ListIcon,
-//   BankingIcon,
-//   BookIcon,
-//   BrowserIcon,
-//   CartIcon,
-//   CubeIcon,
-//   DashboardIcon,
-//   PostIcon,
-//   SettingsIcon,
-//   ShopIcon,
-//   StatistikIcon,
-//   TelefonieIcon,
-//   UserIcon,
-// } from "../components/Icon/CheckIcon";
 const Dashboard = lazy(() => import("../components/TabsComponents/Dashboard"));
 const Banking = lazy(() => import("../components/TabsComponents/Banking"));
 const Telefonie = lazy(() => import("../components/TabsComponents/Telefonie"));

@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import { Suspense } from "react";
-import React from "react";
 import { tabs } from "./data/constants";
 
 function App() {
