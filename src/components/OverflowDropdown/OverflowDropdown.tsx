@@ -1,6 +1,6 @@
 import React from "react";
-import { tabs } from "../data/constants.tsx";
-import { OverflowDropdownProps } from "../data/types";
+import { tabs } from "../../data/constants.tsx";
+import { OverflowDropdownProps } from "../../data/types.ts";
 import clsx from "clsx";
 import { useNavigate } from "react-router-dom";
 

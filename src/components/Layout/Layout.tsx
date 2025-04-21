@@ -1,9 +1,9 @@
-import Tab from "./Tab";
+import Tab from "../Tab/Tab.tsx";
 import styled from "styled-components";
-import { tabs } from "../data/constants.tsx";
+import { tabs } from "../../data/constants.tsx";
 import { useEffect, useState, useRef } from "react";
 import { Outlet } from "react-router-dom";
-import { Tooltip } from "./Tooltip";
+import { Tooltip } from "../Tooltip/Tooltip.tsx";
 import {
   DndContext,
   DragEndEvent,
@@ -13,9 +13,9 @@ import {
   TouchSensor,
 } from "@dnd-kit/core";
 import { arrayMove, SortableContext } from "@dnd-kit/sortable";
-import { TabProps } from "../data/types";
+import { TabProps } from "../../data/types.ts";
 import { useNavigate } from "react-router-dom";
-import { OverflowDropdown } from "./OverflowDropdown";
+import { OverflowDropdown } from "../OverflowDropdown/OverflowDropdown.tsx";
 
 const TabDivider = styled.div`
   display: flex;
@@ -33,7 +33,7 @@ import {
   Header,
   Nav,
   Main,
-} from "./LayoutStyles";
+} from "./LayoutStyles.ts";
 
 const Layout = () => {
   const [activeTab, setActiveTab] = useState(tabs[0]?.name || "");

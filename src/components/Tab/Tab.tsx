@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { TabProps } from "../data/types";
+import { TabProps } from "../../data/types";
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import { TabWrapper, TabIcon, TabText } from "./TabStyles";
