@@ -48,5 +48,9 @@ export const TabIcon = styled.img<{ $active?: boolean }>`
 `;
 
 export const TabText = styled.p`
-  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 115%;
+  color: #343434;
 `;
