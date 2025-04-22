@@ -1,4 +1,3 @@
-import clsx from "clsx";
 import { TabProps } from "../../data/types";
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";

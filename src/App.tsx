@@ -9,8 +9,8 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<Layout />}>
-            {tabs.map(({ path, element }) => (
-              <Route key={path} path={path} element={element} />
+            {tabs.map(({ path, element: Element }) => (
+              <Route key={path} path={path} element={<Element />} />
             ))}
           </Route>
         </Routes>

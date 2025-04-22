@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { TooltipProps } from "../data/types";
+import { TooltipProps } from "../../data/types";
 import { TooltipWrapper, TooltipBox } from "./TooltipStyles";
 
 export const Tooltip = ({
@@ -19,16 +19,16 @@ export const Tooltip = ({
   if (disabled) return <>{children}</>;
 
   useEffect(() => {
-    if (isVisible && tooltipRef.current) {
-      const rect = tooltipRef.current.getBoundingClientRect();
+    if (!isVisible || !tooltipRef.current) return;
 
-      if (rect.right > window.innerWidth) {
-        setPositionClass("right-[70%]");
-      } else if (rect.left < 0) {
-        setPositionClass("-right-[70%]");
-      } else {
-        setPositionClass("-right-[70%]");
-      }
+    const rect = tooltipRef.current.getBoundingClientRect();
+
+    if (rect.right > window.innerWidth) {
+      setPositionClass("right-[70%]");
+    } else if (rect.left < 0) {
+      setPositionClass("-right-[70%]");
+    } else {
+      setPositionClass("-right-[70%]");
     }
   }, [isVisible]);
 

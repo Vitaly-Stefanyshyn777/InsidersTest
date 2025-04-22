@@ -141,7 +141,7 @@ const Layout = () => {
     checkOverflow();
     window.addEventListener("resize", checkOverflow);
     return () => window.removeEventListener("resize", checkOverflow);
-  }, [pinnedTabs, allTabs.length]);
+  }, [pinnedTabs, tabsWithId]);
 
   return (
     <div>
