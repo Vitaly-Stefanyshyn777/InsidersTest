@@ -19,7 +19,6 @@ export const Nav = styled.nav`
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  overflow-x: auto;
   font-family: "Poppins Medium", sans-serif;
   border: 1px solid var(--nav-border);
   background-color: white;
